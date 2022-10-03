@@ -7,8 +7,26 @@
 
     //ENTRADA
 
+    let listaDeNomes = ["Alisson", "Sophia", "João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia", "Jeffrey"];
+    let chad = [];
+    let woman = [];
+
 
     //PROCESSAMENTO
+
+    for (nome of listaDeNomes) {
+
+        const pergunta = prompt("Informe a Seguir Se " + nome + " É: (F) Feminino ou (M) Masculino.").toUpperCase();
+
+        if (pergunta === "M") {
+            chad.push(nome);
+        }
+        
+        else {
+            woman.push(nome);
+        }
+    }
+    document.write(`Nomes de Homens Chads: ${chad.join(" - ")} <br> Nomes de Woman: ${woman.join(" - ")}`);
 
 
     //SAÍDA
