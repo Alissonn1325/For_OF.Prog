@@ -7,9 +7,21 @@
 
     //ENTRADA
 
+    let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+    let vogal = [];
+    let sobra = [];
 
     //PROCESSAMENTO
 
+    for (nome of listaDeNomes) {
+        if (nome.charAt(0) === "A" || nome.charAt(0) === "E" || nome.charAt(0) === "I" || nome.charAt(0) === "O" || nome.charAt(0) === "U") {
+            vogal.push(nome);
+        }
+        else {
+            sobra.push(nome);
+        }
+    }
+    document.write(`Nome Com Vogais: ${vogal.sort()} <br> Nomes Sem Vogais: ${sobra.sort()}`)
 
     //SAÍDA
 

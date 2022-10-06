@@ -7,10 +7,18 @@
 
     //ENTRADA
 
+    let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
+    let listaJoaoCria = [];
+    let nomesSemJoao = [];
 
-    //PROCESSAMENTO
+    for (nome of listaDeNomes) {
+        if (nome.toUpperCase().replace("Ã", "A").search("JOAO") >= 0) {
+            listaJoaoCria.push(nome);
+        }
 
-
-    //SAÍDA
-
+        else {
+            nomesSemJoao.push(nome);
+        }
+    }
+    document.write(`Nomes Com João: ${listaJoaoCria.join(" - ")} <br> Nomes Sem João: ${nomesSemJoao.join(" - ")}`);
 </script>

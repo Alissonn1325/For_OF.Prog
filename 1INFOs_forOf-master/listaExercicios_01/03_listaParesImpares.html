@@ -10,7 +10,7 @@
     let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     let numerosParesCrias = [];
     let numerosImparesCrias = [];
-    
+
     for (let numero of listaDeNumeros) {
         if (numero % 2 === 0) {
             numerosParesCrias.push(numero);
@@ -19,7 +19,7 @@
             numerosImparesCrias.push(numero);
         }
     }
-    document.write(`Números Pares: ${numerosParesCrias.sort((a, b) => a - b)} Números Impares: ${numerosImparesCrias.sort((a, b) => a - b)}<br>`); 
+    document.write(`Números Pares: ${numerosParesCrias.sort((a, b) => a - b)} Números Impares: ${numerosImparesCrias.sort((a, b) => a - b)}<br>`);
     document.write(`Números Pares: ${numerosParesCrias.sort((a, b) => b - a)} Números Impares: ${numerosImparesCrias.sort((a, b) => b - a)}`);
 
 </script>
